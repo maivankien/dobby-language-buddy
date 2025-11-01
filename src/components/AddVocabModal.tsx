@@ -266,7 +266,7 @@ export const AddVocabModal: React.FC<AddVocabModalProps> = ({
                                     name="addMode"
                                     value="create"
                                     checked={addMode === 'create'}
-                                    onChange={(e) => {
+                                    onChange={(_) => {
                                         setAddMode('create')
                                         setSelectedTopicId('')
                                     }}
@@ -280,7 +280,7 @@ export const AddVocabModal: React.FC<AddVocabModalProps> = ({
                                     name="addMode"
                                     value="existing"
                                     checked={addMode === 'existing'}
-                                    onChange={(e) => {
+                                    onChange={(_) => {
                                         setAddMode('existing')
                                         setTopic('')
                                     }}
