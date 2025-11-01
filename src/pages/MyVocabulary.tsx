@@ -130,7 +130,7 @@ export const MyVocabulary: React.FC = () => {
                             </p>
                             <button
                                 onClick={() => setIsAddVocabModalOpen(true)}
-                                className="flex items-center justify-center space-x-2 px-4 py-2.5 bg-blue-600 hover:bg-blue-700 text-white rounded-lg sm:rounded-xl transition-all duration-200 cursor-pointer font-medium text-sm sm:text-base btn-hover-lift w-full"
+                                className="flex items-center justify-center space-x-2 px-4 py-2.5 bg-yellow-600 hover:bg-yellow-700 text-white rounded-lg sm:rounded-xl transition-all duration-200 cursor-pointer font-medium text-sm sm:text-base btn-hover-lift w-full"
                             >
                                 <Plus className="w-4 h-4 sm:w-5 sm:h-5" />
                                 <span>Add Vocabulary</span>
@@ -163,7 +163,7 @@ export const MyVocabulary: React.FC = () => {
                     </div>
                     <button
                         onClick={() => setIsAddVocabModalOpen(true)}
-                        className="flex items-center justify-center space-x-2 px-4 py-2.5 bg-blue-600 hover:bg-blue-700 text-white rounded-lg sm:rounded-xl transition-all duration-200 cursor-pointer font-medium text-sm sm:text-base btn-hover-lift"
+                        className="flex items-center justify-center space-x-2 px-4 py-2.5 bg-yellow-600 hover:bg-yellow-700 text-white rounded-lg sm:rounded-xl transition-all duration-200 cursor-pointer font-medium text-sm sm:text-base btn-hover-lift"
                     >
                         <Plus className="w-4 h-4 sm:w-5 sm:h-5" />
                         <span>Add Vocabulary</span>

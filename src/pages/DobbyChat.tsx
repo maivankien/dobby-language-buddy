@@ -151,13 +151,13 @@ export const DobbyChat: React.FC = () => {
                             <div
                                 className={`max-w-[85%] sm:max-w-xs lg:max-w-md px-3 sm:px-4 py-2 sm:py-3 rounded-xl sm:rounded-2xl ${
                                     message.sender === 'user'
-                                        ? 'bg-blue-500 text-white'
+                                        ? 'bg-yellow-500 text-white'
                                         : 'bg-white/90 text-gray-900'
                                 }`}
                             >
                                 <p className="text-xs sm:text-sm break-words">{message.content}</p>
                                 <p className={`text-xs mt-1 ${
-                                    message.sender === 'user' ? 'text-blue-100' : 'text-gray-500'
+                                    message.sender === 'user' ? 'text-yellow-100' : 'text-gray-500'
                                 }`}>
                                     {new Date(message.timestamp).toLocaleTimeString()}
                                 </p>
@@ -182,7 +182,7 @@ export const DobbyChat: React.FC = () => {
                         <button
                             onClick={handleSendMessage}
                             disabled={!inputMessage.trim() || isLoading}
-                            className="bg-blue-500 hover:bg-blue-600 disabled:bg-gray-400 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg sm:rounded-xl transition-colors flex items-center justify-center space-x-2 btn-hover-lift text-sm sm:text-base focus-ring-white cursor-pointer disabled:cursor-not-allowed"
+                            className="bg-yellow-500 hover:bg-yellow-600 disabled:bg-gray-400 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg sm:rounded-xl transition-colors flex items-center justify-center space-x-2 btn-hover-lift text-sm sm:text-base focus-ring-white cursor-pointer disabled:cursor-not-allowed"
                             aria-label="Send message"
                         >
                             {isLoading ? (

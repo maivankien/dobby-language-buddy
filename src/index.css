@@ -4,15 +4,15 @@
 
 :root {
     /* Color Variables */
-    --primary-gradient: linear-gradient(135deg, #a8c8ec 0%, #c8a8d8 100%);
+    --primary-gradient: linear-gradient(135deg, #f7e05a 0%, #f0a855 100%);
     --secondary-gradient: linear-gradient(135deg, #f8b5c8 0%, #f5a3b7 100%);
     --success-gradient: linear-gradient(135deg, #a8d8ea 0%, #b8e8f0 100%);
     --warning-gradient: linear-gradient(135deg, #a8e6cf 0%, #b8f0e8 100%);
     
     /* Glass Effect Variables */
-    --glass-bg: rgba(255, 255, 255, 0.1);
-    --glass-border: rgba(255, 255, 255, 0.2);
-    --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    --glass-bg: rgba(249, 245, 212, 0.3);
+    --glass-border: rgba(255, 255, 255, 0.3);
+    --glass-shadow: 0 8px 32px 0 rgba(184, 141, 63, 0.25);
     
     /* Accessibility Colors */
     --text-primary: #374151;
@@ -22,15 +22,19 @@
     --text-dark: #1f2937;
     --text-dark-muted: rgba(31, 41, 55, 0.8);
     --bg-white: #ffffff;
-    --bg-white-muted: rgba(255, 255, 255, 0.95);
-    --bg-blue-50: #eff6ff;
+    --bg-white-muted: rgba(249, 245, 212, 0.95);
+    --bg-yellow-50: #fefce8;
+    --bg-yellow-100: #fef9c3;
     --bg-green-50: #f0fdf4;
     --bg-gray-50: #f9fafb;
     --bg-gray-100: #f3f4f6;
     --border-gray-300: #d1d5db;
     --border-white-30: rgba(255, 255, 255, 0.4);
     
-    /* Interactive Colors */
+    /* Interactive Colors - Yellow Theme */
+    --yellow-500: #e9a239;
+    --yellow-600: #d4a574;
+    --yellow-700: #b88d3f;
     --blue-500: #3b82f6;
     --blue-600: #2563eb;
     --blue-700: #1d4ed8;
@@ -217,7 +221,7 @@ body {
 
 /* Focus States */
 .focus-ring {
-    @apply focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2;
+    @apply focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2;
 }
 
 .focus-ring-white {
@@ -255,7 +259,7 @@ body {
     position: absolute;
     top: -40px;
     left: 6px;
-    background: var(--blue-600);
+    background: var(--yellow-600);
     color: white;
     padding: 8px;
     text-decoration: none;

@@ -70,7 +70,7 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
 
                     <div className="glass rounded-lg sm:rounded-xl p-4 sm:p-5 border border-white/30">
                         <div className="flex items-center space-x-2 mb-3">
-                            <Volume2 className="w-5 h-5 text-blue-600 flex-shrink-0" />
+                            <Volume2 className="w-5 h-5 text-yellow-600 flex-shrink-0" />
                             <span className="font-semibold text-gray-800">Pronunciation</span>
                         </div>
                         <p className="text-base sm:text-lg italic text-gray-700 pl-7">
@@ -78,7 +78,7 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
                         </p>
                     </div>
 
-                    <div className="glass rounded-lg sm:rounded-xl p-4 sm:p-5 border border-white/30 bg-blue-50/30">
+                    <div className="glass rounded-lg sm:rounded-xl p-4 sm:p-5 border border-white/30 bg-yellow-50/30">
                         <div className="flex items-center space-x-2 mb-3">
                             <span className="text-xl">💬</span>
                             <span className="font-semibold text-gray-800">Example Sentence</span>

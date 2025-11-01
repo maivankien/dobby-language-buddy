@@ -57,12 +57,12 @@ export const ApiSettings: React.FC = () => {
             <div className="glass rounded-xl sm:rounded-2xl shadow-xl p-4 sm:p-6 lg:p-8 animate-fadeIn">
                 <div className="space-y-4 sm:space-y-6">
                     {/* Info Alert */}
-                    <div className="bg-blue-50 border border-blue-200 rounded-lg p-3 sm:p-4">
+                    <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-3 sm:p-4">
                         <div className="flex items-start space-x-2 sm:space-x-3">
-                            <AlertCircle className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 flex-shrink-0 mt-0.5" />
-                            <div className="text-xs sm:text-sm text-blue-800">
+                            <AlertCircle className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-600 flex-shrink-0 mt-0.5" />
+                            <div className="text-xs sm:text-sm text-yellow-800">
                                 <p className="font-medium mb-1">Information:</p>
-                                <ul className="list-disc list-inside space-y-1 text-blue-700">
+                                <ul className="list-disc list-inside space-y-1 text-yellow-700">
                                     <li>Your API key will be saved to your browser's localStorage</li>
                                     <li>API key is stored locally and will not be shared with anyone</li>
                                     <li>You must configure an API key to use Dobby Chat features</li>
@@ -117,7 +117,7 @@ export const ApiSettings: React.FC = () => {
                     <div className="flex justify-end">
                         <button
                             onClick={handleSave}
-                            className="bg-blue-500 hover:bg-blue-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg sm:rounded-xl transition-colors flex items-center justify-center space-x-2 btn-hover-lift text-sm sm:text-base focus-ring-white cursor-pointer"
+                            className="bg-yellow-500 hover:bg-yellow-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg sm:rounded-xl transition-colors flex items-center justify-center space-x-2 btn-hover-lift text-sm sm:text-base focus-ring-white cursor-pointer"
                             aria-label="Save API key"
                         >
                             <Save className="w-4 h-4" />

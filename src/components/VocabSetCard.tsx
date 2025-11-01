@@ -67,7 +67,7 @@ export const VocabSetCard: React.FC<VocabSetCardProps> = ({
                     <div className="flex items-center space-x-1 sm:space-x-2 flex-shrink-0">
                         <button
                             onClick={() => navigate(`/quiz?setId=${vocabSet.id}`)}
-                            className="p-1 sm:p-2 text-blue-400 hover:bg-blue-500/20 rounded-lg transition-colors cursor-pointer"
+                            className="p-1 sm:p-2 text-yellow-400 hover:bg-yellow-500/20 rounded-lg transition-colors cursor-pointer"
                             title="Start Quiz"
                         >
                             <Brain className="w-3 h-3 sm:w-4 sm:h-4" />
@@ -107,16 +107,16 @@ export const VocabSetCard: React.FC<VocabSetCardProps> = ({
                                             </span>
                                         </div>
                                     </div>
-                                    <div className="text-xs sm:text-sm text-gray-600 mt-1 bg-blue-50 rounded-lg p-2">
-                                        <span className="font-medium text-blue-700">Pronunciation:</span>
-                                        <span className="italic text-blue-600 ml-1 break-all">{word.phonetic}</span>
+                                    <div className="text-xs sm:text-sm text-gray-600 mt-1 bg-yellow-50 rounded-lg p-2">
+                                        <span className="font-medium text-yellow-700">Pronunciation:</span>
+                                        <span className="italic text-yellow-600 ml-1 break-all">{word.phonetic}</span>
                                     </div>
                                 </div>
 
                                 <div className="flex items-center space-x-1.5 sm:space-x-2 flex-shrink-0 ml-2">
                                     <button
                                         onClick={() => onViewWord(vocabSet, index)}
-                                        className="p-2 sm:p-3 text-blue-600 hover:bg-blue-100 rounded-lg transition-colors cursor-pointer"
+                                        className="p-2 sm:p-3 text-yellow-600 hover:bg-yellow-100 rounded-lg transition-colors cursor-pointer"
                                         title="View details"
                                     >
                                         <Eye className="w-4 h-4 sm:w-4 sm:h-4" />

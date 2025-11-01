@@ -150,7 +150,7 @@ export const Quiz: React.FC = () => {
                             </p>
                             <button
                                 onClick={() => navigate('/vocabulary')}
-                                className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors"
+                                className="px-4 py-2 bg-yellow-600 hover:bg-yellow-700 text-white rounded-lg transition-colors"
                             >
                                 Go to Vocabulary
                             </button>
@@ -164,7 +164,7 @@ export const Quiz: React.FC = () => {
                                 <select
                                     value={selectedSetId || 'all'}
                                     onChange={(e) => setSelectedSetId(e.target.value === 'all' ? null : e.target.value)}
-                                    className="w-full px-3 sm:px-4 py-2 sm:py-2.5 bg-white/90 border border-gray-300 rounded-lg text-sm sm:text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    className="w-full px-3 sm:px-4 py-2 sm:py-2.5 bg-white/90 border border-gray-300 rounded-lg text-sm sm:text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-yellow-500"
                                 >
                                     <option value="all">All Sets (Random)</option>
                                     {vocabSets.map((set) => (
@@ -187,7 +187,7 @@ export const Quiz: React.FC = () => {
                                             disabled={count > totalWords}
                                             className={`px-4 py-2 rounded-lg font-medium text-sm sm:text-base transition-all ${
                                                 questionCount === count
-                                                    ? 'bg-blue-600 text-white shadow-lg'
+                                                    ? 'bg-yellow-600 text-white shadow-lg'
                                                     : 'bg-white/90 text-gray-700 hover:bg-white'
                                             } ${
                                                 count > totalWords
@@ -209,7 +209,7 @@ export const Quiz: React.FC = () => {
                             <button
                                 onClick={handleStartQuiz}
                                 disabled={maxQuestions === 0}
-                                className="w-full flex items-center justify-center space-x-2 px-4 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg sm:rounded-xl transition-all duration-200 font-medium text-sm sm:text-base btn-hover-lift disabled:opacity-50 disabled:cursor-not-allowed"
+                                className="w-full flex items-center justify-center space-x-2 px-4 py-3 bg-yellow-600 hover:bg-yellow-700 text-white rounded-lg sm:rounded-xl transition-all duration-200 font-medium text-sm sm:text-base btn-hover-lift disabled:opacity-50 disabled:cursor-not-allowed"
                             >
                                 <Play className="w-4 h-4 sm:w-5 sm:h-5" />
                                 <span>Start Quiz</span>
@@ -238,7 +238,7 @@ export const Quiz: React.FC = () => {
                         </div>
                         <div className="w-full bg-gray-200 rounded-full h-2 sm:h-3">
                             <div
-                                className="bg-blue-600 h-2 sm:h-3 rounded-full transition-all duration-300"
+                                className="bg-yellow-600 h-2 sm:h-3 rounded-full transition-all duration-300"
                                 style={{ width: `${progress}%` }}
                             />
                         </div>
@@ -251,7 +251,7 @@ export const Quiz: React.FC = () => {
 
                         {currentQuestion.type === 'meaning' && (
                             <div className="text-center mb-4 sm:mb-6">
-                                <span className="text-2xl sm:text-3xl font-bold text-blue-600">
+                                <span className="text-2xl sm:text-3xl font-bold text-yellow-600">
                                     {currentQuestion.word.word_target}
                                 </span>
                                 {currentQuestion.word.phonetic && (
@@ -269,8 +269,8 @@ export const Quiz: React.FC = () => {
                                     onClick={() => setSelectedAnswer(option)}
                                     className={`w-full text-left px-4 py-3 rounded-lg transition-all duration-200 ${
                                         selectedAnswer === option
-                                            ? 'bg-blue-600 text-white shadow-lg'
-                                            : 'bg-white/90 text-gray-800 hover:bg-blue-200'
+                                            ? 'bg-yellow-600 text-white shadow-lg'
+                                            : 'bg-white/90 text-gray-800 hover:bg-yellow-200'
                                     }`}
                                 >
                                     <span className="font-medium text-sm sm:text-base">
@@ -284,7 +284,7 @@ export const Quiz: React.FC = () => {
                     <button
                         onClick={handleSubmitAnswer}
                         disabled={!selectedAnswer}
-                        className="w-full flex items-center justify-center space-x-2 px-4 py-3 bg-green-600 hover:bg-green-700 text-white rounded-lg sm:rounded-xl transition-all duration-200 font-medium text-sm sm:text-base btn-hover-lift disabled:opacity-50 disabled:cursor-not-allowed"
+                        className="w-full flex items-center justify-center space-x-2 px-4 py-3 bg-yellow-600 hover:bg-yellow-700 text-white rounded-lg sm:rounded-xl transition-all duration-200 font-medium text-sm sm:text-base btn-hover-lift disabled:opacity-50 disabled:cursor-not-allowed"
                     >
                         <span>{currentIndex < questions.length - 1 ? 'Next Question' : 'Submit Quiz'}</span>
                         <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -305,13 +305,13 @@ export const Quiz: React.FC = () => {
                         <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-2 sm:mb-4">
                             Quiz Complete!
                         </h2>
-                        <div className="text-4xl sm:text-5xl font-bold text-blue-600 mb-2 sm:mb-4">
+                        <div className="text-4xl sm:text-5xl font-bold text-yellow-600 mb-2 sm:mb-4">
                             {result.score} / {result.total}
                         </div>
                         <div className="text-xl sm:text-2xl font-semibold text-gray-700 mb-4 sm:mb-6">
                             {percentage.toFixed(0)}%
                         </div>
-                        <div className="bg-blue-50 rounded-lg p-4 sm:p-6 mb-4 sm:mb-6">
+                        <div className="bg-yellow-50 rounded-lg p-4 sm:p-6 mb-4 sm:mb-6">
                             <p className="text-base sm:text-lg text-gray-800 italic">
                                 "{feedback}"
                             </p>
@@ -371,7 +371,7 @@ export const Quiz: React.FC = () => {
                     <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                         <button
                             onClick={handleTryAgain}
-                            className="flex-1 flex items-center justify-center space-x-2 px-4 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg sm:rounded-xl transition-all duration-200 font-medium text-sm sm:text-base btn-hover-lift"
+                            className="flex-1 flex items-center justify-center space-x-2 px-4 py-3 bg-yellow-600 hover:bg-yellow-700 text-white rounded-lg sm:rounded-xl transition-all duration-200 font-medium text-sm sm:text-base btn-hover-lift"
                         >
                             <RotateCcw className="w-4 h-4 sm:w-5 sm:h-5" />
                             <span>Try Again</span>

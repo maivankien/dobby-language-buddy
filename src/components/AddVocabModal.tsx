@@ -270,7 +270,7 @@ export const AddVocabModal: React.FC<AddVocabModalProps> = ({
                                         setAddMode('create')
                                         setSelectedTopicId('')
                                     }}
-                                    className="w-4 h-4 text-blue-600 focus-ring cursor-pointer"
+                                    className="w-4 h-4 text-yellow-600 focus-ring cursor-pointer"
                                 />
                                 <span className="text-sm text-gray-700">Create new topic</span>
                             </label>
@@ -285,7 +285,7 @@ export const AddVocabModal: React.FC<AddVocabModalProps> = ({
                                         setTopic('')
                                     }}
                                     disabled={availableTopics.length === 0}
-                                    className="w-4 h-4 text-blue-600 focus-ring cursor-pointer disabled:opacity-50"
+                                    className="w-4 h-4 text-yellow-600 focus-ring cursor-pointer disabled:opacity-50"
                                 />
                                 <span className={`text-sm ${availableTopics.length === 0 ? 'text-gray-400' : 'text-gray-700'}`}>
                                     Add to existing topic {availableTopics.length === 0 && '(none available)'}
@@ -362,7 +362,7 @@ export const AddVocabModal: React.FC<AddVocabModalProps> = ({
                             <button
                                 type="button"
                                 onClick={handleAddWord}
-                                className="flex items-center space-x-1 px-3 py-1.5 text-sm text-blue-600 hover:bg-blue-50 rounded-lg transition-colors cursor-pointer"
+                                className="flex items-center space-x-1 px-3 py-1.5 text-sm text-yellow-600 hover:bg-yellow-50 rounded-lg transition-colors cursor-pointer"
                             >
                                 <Plus className="w-4 h-4" />
                                 <span>Add Word</span>
@@ -483,7 +483,7 @@ export const AddVocabModal: React.FC<AddVocabModalProps> = ({
                             type="button"
                             onClick={handleSubmit}
                             disabled={isSubmitting}
-                            className="px-4 py-2.5 text-white bg-blue-600 hover:bg-blue-700 rounded-lg transition-all duration-200 cursor-pointer font-medium text-sm sm:text-base disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
+                            className="px-4 py-2.5 text-white bg-yellow-600 hover:bg-yellow-700 rounded-lg transition-all duration-200 cursor-pointer font-medium text-sm sm:text-base disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
                         >
                             {isSubmitting ? (
                                 <>

@@ -15,7 +15,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
     }
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-blue-200 via-purple-200 to-indigo-300 flex flex-col">
+        <div className="min-h-screen bg-gradient-to-br from-yellow-100 via-amber-100 to-orange-100 flex flex-col">
             <header className="glass-strong border-b border-white/20 sticky top-0 z-40">
                 <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-8">
                     <div className="flex justify-between items-center h-14 sm:h-16">
