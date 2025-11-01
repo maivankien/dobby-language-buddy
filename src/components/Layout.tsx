@@ -19,9 +19,14 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
             <header className="glass-strong border-b border-white/20 sticky top-0 z-40">
                 <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-8">
                     <div className="flex justify-between items-center h-14 sm:h-16">
-                        <div className="flex items-center">
+                        <div className="flex items-center space-x-2 sm:space-x-3">
+                            <img 
+                                src="/images/logo-dobby.png" 
+                                alt="Dobby Logo" 
+                                className="w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10 flex-shrink-0"
+                            />
                             <h1 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-800 truncate">
-                                ✨ {APP_NAME}
+                                {APP_NAME}
                             </h1>
                         </div>
                         
